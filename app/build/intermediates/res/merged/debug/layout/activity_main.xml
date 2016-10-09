@@ -46,6 +46,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="登录"/>
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注销"/>
+        <Button
+            android:id="@+id/getuer_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取用户信息(测试cookies)"/>
 
     </LinearLayout>
 

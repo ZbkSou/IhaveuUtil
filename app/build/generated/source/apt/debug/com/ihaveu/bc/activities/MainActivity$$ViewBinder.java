@@ -55,6 +55,24 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
         target.onClick(p0);
       }
     });
+    view = finder.findRequiredView(source, 2131427422, "field 'getuerButton' and method 'onClick'");
+    target.getuerButton = finder.castView(view, 2131427422, "field 'getuerButton'");
+    unbinder.view2131427422 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
+    view = finder.findRequiredView(source, 2131427421, "field 'logoutButton' and method 'onClick'");
+    target.logoutButton = finder.castView(view, 2131427421, "field 'logoutButton'");
+    unbinder.view2131427421 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
     return unbinder;
   }
 
@@ -72,6 +90,10 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
     View view2131427418;
 
     View view2131427419;
+
+    View view2131427422;
+
+    View view2131427421;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -95,6 +117,10 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
       target.getImageRequest = null;
       view2131427419.setOnClickListener(null);
       target.clearImageCache = null;
+      view2131427422.setOnClickListener(null);
+      target.getuerButton = null;
+      view2131427421.setOnClickListener(null);
+      target.logoutButton = null;
     }
   }
 }
