@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.Log;
 
 import com.ihaveu.bc.callback.JsonCallBack;
+import com.ihaveu.bc.data.Session;
 import com.ihaveu.bc.network.IModelResponse;
 import com.lzy.okhttputils.callback.StringCallback;
 
@@ -36,5 +37,14 @@ public class SessionModel extends Model{
       }
     });
   }
+  public void isLogin(final IModelResponse<Session> modelResponse){
+    get(Url, mContext, new JsonCallBack(Session.class) {
+      @Override
+      public void onSuccess(Object o, Call call, Response response) {
+        modelResponse.onSuccess((Session) o,null);
+      }
+    });
+  }
+
 
 }

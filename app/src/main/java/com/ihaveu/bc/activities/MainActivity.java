@@ -2,8 +2,6 @@ package com.ihaveu.bc.activities;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,12 +12,15 @@ import android.widget.TextView;
 import com.ihaveu.bc.R;
 import com.ihaveu.bc.interfaces.IMain;
 import com.ihaveu.bc.presenter.MainPresenter;
+import com.lzy.okhttputils.OkHttpUtils;
+import com.lzy.okhttputils.cookie.store.PersistentCookieStore;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import okhttp3.HttpUrl;
 
-public class MainActivity extends Activity implements IMain{
+public class MainActivity extends Activity implements IMain {
   @BindView(R.id.request_text)
   TextView requestText;
   @BindView(R.id.get_request)
@@ -32,6 +33,10 @@ public class MainActivity extends Activity implements IMain{
   Button getImageRequest;
   @BindView(R.id.clear_image_cache)
   Button clearImageCache;
+  @BindView(R.id.getuer_button)
+  Button getuerButton;
+  @BindView(R.id.logout_button)
+  Button logoutButton;
   //  private Button getTextView,postTextView;
 //  private TextView textView;
   private MainPresenter mainPresenter;
@@ -49,7 +54,7 @@ public class MainActivity extends Activity implements IMain{
   @Override
   public void setTextView(final String text) {
 
-        requestText.setText(text);
+    requestText.setText(text);
   }
 
 //  @Override
@@ -57,7 +62,7 @@ public class MainActivity extends Activity implements IMain{
 //    requestImage.setImageBitmap(bitmap);
 //  }
 
-  @OnClick({R.id.get_request, R.id.login_button, R.id.get_image_request,R.id.clear_image_cache})
+  @OnClick({R.id.get_request, R.id.login_button, R.id.get_image_request, R.id.clear_image_cache, R.id.getuer_button,R.id.logout_button})
   public void onClick(View view) {
     Log.d("MainActivity", "onClick");
     switch (view.getId()) {
@@ -65,13 +70,17 @@ public class MainActivity extends Activity implements IMain{
         mainPresenter.get("");
         break;
       case R.id.login_button:
-        Intent intent = new Intent(this,LoginActivity.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
         break;
       case R.id.get_image_request:
-//        mainPresenter.getImage("http://img.dahe.cn/qf/2016/9/27/1159WOG37B.jpg", requestImage);
-      case R.id.clear_image_cache:
 
+      case R.id.clear_image_cache:
+      case R.id.getuer_button:
+        mainPresenter.isLogin();
+        break;
+      case R.id.logout_button:
+        new PersistentCookieStore().removeAllCookie();
     }
   }
 }
