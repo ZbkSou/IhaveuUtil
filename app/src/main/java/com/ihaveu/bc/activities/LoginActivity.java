@@ -10,6 +10,8 @@ import com.ihaveu.bc.R;
 import com.ihaveu.bc.model.Model;
 import com.ihaveu.bc.model.SessionModel;
 import com.ihaveu.bc.network.IModelResponse;
+import com.ihaveu.bc.utils.LogUtil;
+import com.ihaveu.bc.utils.MeasureToast;
 import com.lzy.okhttputils.callback.StringCallback;
 
 import org.json.JSONObject;
@@ -64,7 +66,8 @@ public class LoginActivity extends Activity {
     model.login(params, new IModelResponse<String>() {
       @Override
       public void onSuccess(String model, ArrayList<String> list) {
-        Log.d("Login",model);
+        LogUtil.d(model);
+        MeasureToast.showToast("登录成功"+model);
       }
 
       @Override

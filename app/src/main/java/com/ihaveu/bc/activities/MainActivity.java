@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.ihaveu.bc.R;
 import com.ihaveu.bc.interfaces.IMain;
 import com.ihaveu.bc.presenter.MainPresenter;
+import com.ihaveu.bc.utils.MeasureToast;
 import com.lzy.okhttputils.OkHttpUtils;
 import com.lzy.okhttputils.cookie.store.PersistentCookieStore;
 
@@ -81,6 +82,7 @@ public class MainActivity extends Activity implements IMain {
         break;
       case R.id.logout_button:
         new PersistentCookieStore().removeAllCookie();
+        MeasureToast.showToast("注销成功");
     }
   }
 }
