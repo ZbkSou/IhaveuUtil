@@ -6,6 +6,4 @@ package com.ihaveu.bc.interfaces;
  */
 public interface IMain {
   public void setTextView(final String text);
-
-  ;
 }

@@ -6,7 +6,6 @@ package com.ihaveu.bc.presenter;
  */
 
 import android.content.Context;
-import android.util.Log;
 import android.widget.ImageView;
 
 import com.ihaveu.bc.data.ProductSummary;
@@ -15,14 +14,9 @@ import com.ihaveu.bc.interfaces.IMain;
 import com.ihaveu.bc.model.ProductSummaryModel;
 import com.ihaveu.bc.model.SessionModel;
 import com.ihaveu.bc.network.IModelResponse;
-import com.lzy.okhttputils.OkHttpUtils;
-import com.lzy.okhttputils.cache.CacheMode;
-import com.squareup.picasso.Picasso;
+import com.ihaveu.bc.okhttphelp.ImageLoader;
 
 import java.util.ArrayList;
-
-import okhttp3.Call;
-import okhttp3.Response;
 
 /**
  * Created by bc on 16/9/22.
@@ -68,6 +62,10 @@ public class MainPresenter {
       }
     });
   }
+
+    public void setImageView(ImageView imageView){
+        ImageLoader.display("http://img.dahe.cn/qf/2016/9/27/1159WOG37B.jpg",imageView);
+    }
 
 
 }

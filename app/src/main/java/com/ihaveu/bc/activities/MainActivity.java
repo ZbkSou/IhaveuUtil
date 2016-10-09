@@ -2,6 +2,8 @@ package com.ihaveu.bc.activities;
 
 import android.app.Activity;
 import android.content.Intent;
+
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,6 +13,7 @@ import android.widget.TextView;
 
 import com.ihaveu.bc.R;
 import com.ihaveu.bc.interfaces.IMain;
+import com.ihaveu.bc.okhttphelp.ImageLoader;
 import com.ihaveu.bc.presenter.MainPresenter;
 import com.ihaveu.bc.utils.MeasureToast;
 import com.lzy.okhttputils.OkHttpUtils;
@@ -58,12 +61,9 @@ public class MainActivity extends Activity implements IMain {
     requestText.setText(text);
   }
 
-//  @Override
-//  public void setImageView(Bitmap bitmap) {
-//    requestImage.setImageBitmap(bitmap);
-//  }
 
   @OnClick({R.id.get_request, R.id.login_button, R.id.get_image_request, R.id.clear_image_cache, R.id.getuer_button,R.id.logout_button})
+
   public void onClick(View view) {
     Log.d("MainActivity", "onClick");
     switch (view.getId()) {
@@ -75,14 +75,21 @@ public class MainActivity extends Activity implements IMain {
         startActivity(intent);
         break;
       case R.id.get_image_request:
+        mainPresenter.setImageView( requestImage);
+        break;
 
-      case R.id.clear_image_cache:
       case R.id.getuer_button:
         mainPresenter.isLogin();
         break;
       case R.id.logout_button:
         new PersistentCookieStore().removeAllCookie();
         MeasureToast.showToast("注销成功");
+
+        break;
+      case R.id.clear_image_cache:
+        ImageLoader.clearImageDiskCache();
+        break;
     }
   }
+
 }

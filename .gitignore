@@ -1,14 +1,17 @@
-*.iml
+
 .gradle
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
+
+/.idea
 .DS_Store
 /build
 /captures
 
-gradle.properties
-gradle/
-gradlew
-gradlew.bat
+	MyApplication.iml
+/app/build
+/app/app.iml
+/app/newihaveu_keystore.jks
+/gradle.properties
 
