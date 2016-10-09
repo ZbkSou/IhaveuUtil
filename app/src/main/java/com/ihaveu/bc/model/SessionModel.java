@@ -19,7 +19,7 @@ import okhttp3.Response;
 public class SessionModel extends Model{
   private Context mContext;
   private String Url = "http://www.ihaveu.com/sessions.json";
-  private SessionModel (Context context){
+  public SessionModel (Context context){
     mContext = context;
   }
   public void login(Map<String,String> params, final IModelResponse<String> modelResponse){
