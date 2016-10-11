@@ -1,5 +1,6 @@
 package com.ihaveu.bc.utils;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
@@ -26,5 +27,18 @@ public class MeasureToast {
       toast.setView(v);
       toast.show();
     }
+  /**
+   * 原生Toast
+   *
+   * @param context
+   * @param text
+   */
+  public static void toast(Context context, String text) {
+    try {
+      Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
+  }
   }
 

@@ -2,8 +2,6 @@ package com.ihaveu.bc.activities;
 
 import android.app.Activity;
 import android.content.Intent;
-
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,13 +14,11 @@ import com.ihaveu.bc.interfaces.IMain;
 import com.ihaveu.bc.okhttphelp.ImageLoader;
 import com.ihaveu.bc.presenter.MainPresenter;
 import com.ihaveu.bc.utils.MeasureToast;
-import com.lzy.okhttputils.OkHttpUtils;
 import com.lzy.okhttputils.cookie.store.PersistentCookieStore;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import okhttp3.HttpUrl;
 
 public class MainActivity extends Activity implements IMain {
   @BindView(R.id.request_text)
@@ -41,6 +37,8 @@ public class MainActivity extends Activity implements IMain {
   Button getuerButton;
   @BindView(R.id.logout_button)
   Button logoutButton;
+  @BindView(R.id.register_button)
+  Button registerButton;
   //  private Button getTextView,postTextView;
 //  private TextView textView;
   private MainPresenter mainPresenter;
@@ -62,20 +60,21 @@ public class MainActivity extends Activity implements IMain {
   }
 
 
-  @OnClick({R.id.get_request, R.id.login_button, R.id.get_image_request, R.id.clear_image_cache, R.id.getuer_button,R.id.logout_button})
+  @OnClick({R.id.get_request, R.id.login_button, R.id.get_image_request, R.id.clear_image_cache, R.id.getuer_button, R.id.logout_button,R.id.register_button})
 
   public void onClick(View view) {
     Log.d("MainActivity", "onClick");
+    Intent intent;
     switch (view.getId()) {
       case R.id.get_request:
         mainPresenter.get("");
         break;
       case R.id.login_button:
-        Intent intent = new Intent(this, LoginActivity.class);
+         intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
         break;
       case R.id.get_image_request:
-        mainPresenter.setImageView( requestImage);
+        mainPresenter.setImageView(requestImage);
         break;
 
       case R.id.getuer_button:
@@ -88,6 +87,10 @@ public class MainActivity extends Activity implements IMain {
         break;
       case R.id.clear_image_cache:
         ImageLoader.clearImageDiskCache();
+        break;
+      case R.id.register_button:
+         intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
         break;
     }
   }

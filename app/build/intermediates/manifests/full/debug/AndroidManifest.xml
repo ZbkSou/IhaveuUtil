@@ -31,6 +31,8 @@
         </activity>
         <activity android:name="com.ihaveu.bc.activities.LoginActivity" >
         </activity>
+        <activity android:name="com.ihaveu.bc.activities.RegisterActivity" >
+        </activity>
     </application>
 
 </manifest>

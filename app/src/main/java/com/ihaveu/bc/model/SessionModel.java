@@ -6,7 +6,10 @@ import android.util.Log;
 import com.ihaveu.bc.callback.JsonCallBack;
 import com.ihaveu.bc.data.Session;
 import com.ihaveu.bc.network.IModelResponse;
-import com.lzy.okhttputils.callback.StringCallback;
+import com.ihaveu.bc.utils.MeasureToast;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.Map;
 
@@ -19,7 +22,8 @@ import okhttp3.Response;
  */
 public class SessionModel extends Model{
   private Context mContext;
-  private String Url = "http://www.ihaveu.com/sessions.json";
+  private String Url = "http://dww.ihaveu.com/sessions.json";
+
   public SessionModel (Context context){
     mContext = context;
   }
@@ -45,6 +49,8 @@ public class SessionModel extends Model{
       }
     });
   }
+
+
 
 
 }

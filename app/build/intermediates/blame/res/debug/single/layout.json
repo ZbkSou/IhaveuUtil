@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/activity_login.xml",
-        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_login.xml"
-    },
-    {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
         "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/activity_login.xml",
+        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_login.xml"
     },
     {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
@@ -106,6 +106,10 @@
     {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
         "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/activity_register.xml",
+        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_register.xml"
     },
     {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
