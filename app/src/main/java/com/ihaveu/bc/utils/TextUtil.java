@@ -16,8 +16,8 @@ import java.util.regex.Pattern;
  * Created by bc on 16/10/10.
  * Describe 对文本字体的操作，
  */
-public class MeasureTextUtil {
-  public final static String TAG = "MeasureTextUtil";
+public class TextUtil {
+  public final static String TAG = "TextUtil";
   //注意 ： 英文字体包括数字
   //字体包存放路径
   public final static String FONT_CHINESE_PATH = "fangzhenglantingxihei_GBK.TTF";

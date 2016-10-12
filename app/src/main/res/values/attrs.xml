@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义字体TextView -->
+    <declare-styleable name="DTextView">
+        <attr name="DTextView_font" format="enum">
+            <enum name="chinese_fangzheng" value="0"></enum>
+            <enum name="english_1" value="1"></enum>
+            <enum name="english_2" value="2"></enum>
+            <enum name="english_3" value="3"></enum>
+            <enum name="seckill_num" value="4"></enum>
+        </attr>
+        <attr name="DTextView_password" format="enum">
+            <enum name="visable" value="1"></enum>
+            <enum name="gone" value="0"></enum>
+        </attr>
+        <attr name="d_isBankCard" format="boolean"></attr>
+    </declare-styleable>
+    <!-- 自定义EditText newIhaveu -->
+    <declare-styleable name="d_edittext">
+        <attr name="d_textSize" format="dimension|reference"/>
+        <attr name="d_background" format="reference"/>
+        <attr name="d_hint" format="reference|string" />
+        <attr name="d_textColor" format="reference"/>
+        <attr name="maxLength" format="integer" />
+        <attr name="verifyNotNull" format="boolean"></attr>
+        <attr name="alertNotNull" format="reference|string"></attr>
+        <attr name="d_maxLine" format="integer"></attr>
+        <attr name="d_password" format="boolean"></attr>
+        <attr name="d_font" format="enum">
+            <enum name="chinese_fangzheng" value="0"></enum>
+            <enum name="english_1" value="1"></enum>
+            <enum name="english_2" value="2"></enum>
+            <enum name="english_3" value="3"></enum>
+            <enum name="seckill_num" value="4"></enum>
+        </attr>
+        <attr name="d_email" format="boolean"></attr>
+        <attr name="d_phone" format="boolean"></attr>
+        <attr name="d_isBankCard" format="boolean"></attr>
+        <attr name="d_inputType" format="enum">
+            <enum name="none" value="0x00000000"></enum>
+            <enum name="text" value="0x00000001"></enum>
+            <enum name="textEmailAddress" value="0x00000021"></enum>
+            <enum name="number" value="0x00000002"></enum>
+            <enum name="textPersonName" value="0x00000061"></enum>
+            <enum name="textPhonetic" value="0x000000c1"></enum>
+        </attr>
+    </declare-styleable>
+</resources>

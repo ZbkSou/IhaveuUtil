@@ -13,7 +13,7 @@ import com.ihaveu.bc.base.BaseAplication;
  * Created by bc on 16/10/9.
  * Describe
  */
-public class MeasureToast {
+public class Toast {
     /**
      * 普通样式 圆角矩形
      * @param text
@@ -22,8 +22,8 @@ public class MeasureToast {
       View v = LayoutInflater.from(BaseAplication.getContext()).inflate(R.layout.ihaveu_toast_layout, null);
       TextView textView = (TextView) v.findViewById(R.id.toast_text);
       textView.setText(text);
-      Toast toast = new Toast(BaseAplication.getContext());
-      toast.setDuration(Toast.LENGTH_SHORT);
+      android.widget.Toast toast = new android.widget.Toast(BaseAplication.getContext());
+      toast.setDuration(android.widget.Toast.LENGTH_SHORT);
       toast.setView(v);
       toast.show();
     }
@@ -35,7 +35,7 @@ public class MeasureToast {
    */
   public static void toast(Context context, String text) {
     try {
-      Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
+      android.widget.Toast.makeText(context, text, android.widget.Toast.LENGTH_SHORT).show();
     } catch (Exception ex) {
       ex.printStackTrace();
     }

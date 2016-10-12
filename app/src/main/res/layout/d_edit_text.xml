@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+    <EditText
+            android:id="@+id/d_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:paddingRight="35dp"
+            android:paddingLeft="12dp"
+            android:textColorHint="#b0b2b7"
+            android:layout_centerVertical="true"
+            android:background="@drawable/login_edittext_bg"
+            android:text=""
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="3dp"
+            />
+    <ImageButton
+            android:id="@+id/d_delete_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+
+            android:src="@drawable/ic_input_delete"
+            android:background="@null"
+            android:visibility="gone"
+            />
+
+</RelativeLayout>
