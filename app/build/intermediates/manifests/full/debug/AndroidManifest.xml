@@ -33,6 +33,8 @@
         </activity>
         <activity android:name="com.ihaveu.bc.activities.RegisterActivity" >
         </activity>
+        <activity android:name="com.ihaveu.bc.activities.GoodsListActivity" >
+        </activity>
     </application>
 
 </manifest>

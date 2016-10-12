@@ -15,67 +15,76 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131427415, "field 'requestText'");
-    target.requestText = finder.castView(view, 2131427415, "field 'requestText'");
-    view = finder.findRequiredView(source, 2131427417, "field 'getRequest' and method 'onClick'");
-    target.getRequest = finder.castView(view, 2131427417, "field 'getRequest'");
-    unbinder.view2131427417 = view;
+    view = finder.findRequiredView(source, 2131492979, "field 'requestText'");
+    target.requestText = finder.castView(view, 2131492979, "field 'requestText'");
+    view = finder.findRequiredView(source, 2131492981, "field 'getRequest' and method 'onClick'");
+    target.getRequest = finder.castView(view, 2131492981, "field 'getRequest'");
+    unbinder.view2131492981 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131427420, "field 'loginButton' and method 'onClick'");
-    target.loginButton = finder.castView(view, 2131427420, "field 'loginButton'");
-    unbinder.view2131427420 = view;
+    view = finder.findRequiredView(source, 2131492984, "field 'loginButton' and method 'onClick'");
+    target.loginButton = finder.castView(view, 2131492984, "field 'loginButton'");
+    unbinder.view2131492984 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131427416, "field 'requestImage'");
-    target.requestImage = finder.castView(view, 2131427416, "field 'requestImage'");
-    view = finder.findRequiredView(source, 2131427418, "field 'getImageRequest' and method 'onClick'");
-    target.getImageRequest = finder.castView(view, 2131427418, "field 'getImageRequest'");
-    unbinder.view2131427418 = view;
+    view = finder.findRequiredView(source, 2131492980, "field 'requestImage'");
+    target.requestImage = finder.castView(view, 2131492980, "field 'requestImage'");
+    view = finder.findRequiredView(source, 2131492982, "field 'getImageRequest' and method 'onClick'");
+    target.getImageRequest = finder.castView(view, 2131492982, "field 'getImageRequest'");
+    unbinder.view2131492982 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131427419, "field 'clearImageCache' and method 'onClick'");
-    target.clearImageCache = finder.castView(view, 2131427419, "field 'clearImageCache'");
-    unbinder.view2131427419 = view;
+    view = finder.findRequiredView(source, 2131492983, "field 'clearImageCache' and method 'onClick'");
+    target.clearImageCache = finder.castView(view, 2131492983, "field 'clearImageCache'");
+    unbinder.view2131492983 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131427422, "field 'getuerButton' and method 'onClick'");
-    target.getuerButton = finder.castView(view, 2131427422, "field 'getuerButton'");
-    unbinder.view2131427422 = view;
+    view = finder.findRequiredView(source, 2131492986, "field 'getuerButton' and method 'onClick'");
+    target.getuerButton = finder.castView(view, 2131492986, "field 'getuerButton'");
+    unbinder.view2131492986 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131427421, "field 'logoutButton' and method 'onClick'");
-    target.logoutButton = finder.castView(view, 2131427421, "field 'logoutButton'");
-    unbinder.view2131427421 = view;
+    view = finder.findRequiredView(source, 2131492985, "field 'logoutButton' and method 'onClick'");
+    target.logoutButton = finder.castView(view, 2131492985, "field 'logoutButton'");
+    unbinder.view2131492985 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131427423, "field 'registerButton' and method 'onClick'");
-    target.registerButton = finder.castView(view, 2131427423, "field 'registerButton'");
-    unbinder.view2131427423 = view;
+    view = finder.findRequiredView(source, 2131492987, "field 'registerButton' and method 'onClick'");
+    target.registerButton = finder.castView(view, 2131492987, "field 'registerButton'");
+    unbinder.view2131492987 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
+    view = finder.findRequiredView(source, 2131492988, "field 'getGoodsListButton' and method 'onClick'");
+    target.getGoodsListButton = finder.castView(view, 2131492988, "field 'getGoodsListButton'");
+    unbinder.view2131492988 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -92,19 +101,21 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
   protected static class InnerUnbinder<T extends MainActivity> implements Unbinder {
     private T target;
 
-    View view2131427417;
+    View view2131492981;
 
-    View view2131427420;
+    View view2131492984;
 
-    View view2131427418;
+    View view2131492982;
 
-    View view2131427419;
+    View view2131492983;
 
-    View view2131427422;
+    View view2131492986;
 
-    View view2131427421;
+    View view2131492985;
 
-    View view2131427423;
+    View view2131492987;
+
+    View view2131492988;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -119,21 +130,23 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
 
     protected void unbind(T target) {
       target.requestText = null;
-      view2131427417.setOnClickListener(null);
+      view2131492981.setOnClickListener(null);
       target.getRequest = null;
-      view2131427420.setOnClickListener(null);
+      view2131492984.setOnClickListener(null);
       target.loginButton = null;
       target.requestImage = null;
-      view2131427418.setOnClickListener(null);
+      view2131492982.setOnClickListener(null);
       target.getImageRequest = null;
-      view2131427419.setOnClickListener(null);
+      view2131492983.setOnClickListener(null);
       target.clearImageCache = null;
-      view2131427422.setOnClickListener(null);
+      view2131492986.setOnClickListener(null);
       target.getuerButton = null;
-      view2131427421.setOnClickListener(null);
+      view2131492985.setOnClickListener(null);
       target.logoutButton = null;
-      view2131427423.setOnClickListener(null);
+      view2131492987.setOnClickListener(null);
       target.registerButton = null;
+      view2131492988.setOnClickListener(null);
+      target.getGoodsListButton = null;
     }
   }
 }
