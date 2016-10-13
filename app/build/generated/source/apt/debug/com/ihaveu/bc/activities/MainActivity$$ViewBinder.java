@@ -91,6 +91,24 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
         target.onClick(p0);
       }
     });
+    view = finder.findRequiredView(source, 2131492989, "field 'showDataButton' and method 'onClick'");
+    target.showDataButton = finder.castView(view, 2131492989, "field 'showDataButton'");
+    unbinder.view2131492989 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
+    view = finder.findRequiredView(source, 2131492990, "field 'getDataButton' and method 'onClick'");
+    target.getDataButton = finder.castView(view, 2131492990, "field 'getDataButton'");
+    unbinder.view2131492990 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
     return unbinder;
   }
 
@@ -116,6 +134,10 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
     View view2131492987;
 
     View view2131492988;
+
+    View view2131492989;
+
+    View view2131492990;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -147,6 +169,10 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
       target.registerButton = null;
       view2131492988.setOnClickListener(null);
       target.getGoodsListButton = null;
+      view2131492989.setOnClickListener(null);
+      target.showDataButton = null;
+      view2131492990.setOnClickListener(null);
+      target.getDataButton = null;
     }
   }
 }

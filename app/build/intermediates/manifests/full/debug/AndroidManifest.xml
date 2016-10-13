@@ -16,7 +16,7 @@
     <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.ihaveu.bc.base.BaseAplication"
+        android:name="com.ihaveu.bc.base.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

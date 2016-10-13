@@ -1,11 +1,9 @@
 package com.ihaveu.bc.okhttphelp;
 
-import android.content.Context;
 import android.graphics.Bitmap;
-import android.net.Uri;
 import android.widget.ImageView;
 
-import com.ihaveu.bc.base.BaseAplication;
+import com.ihaveu.bc.base.BaseApplication;
 import com.lzy.okhttputils.OkHttpUtils;
 import com.lzy.okhttputils.callback.BitmapCallback;
 import com.squareup.picasso.MemoryPolicy;
@@ -30,8 +28,8 @@ public class ImageLoader {
 
   private static Picasso getInstance() {
     if (picasso == null) {
-      picasso = new Picasso.Builder(BaseAplication.getContext())
-          .downloader(new OkHttp3Downloader(BaseAplication.getContext()))
+      picasso = new Picasso.Builder(BaseApplication.getContext())
+          .downloader(new OkHttp3Downloader(BaseApplication.getContext()))
           .build();
     }
     return picasso;
@@ -59,7 +57,7 @@ public class ImageLoader {
    * @return
    */
   public static boolean clearImageDiskCache() {
-    File cache = new File(BaseAplication.getContext().getCacheDir(), "picasso-cache");
+    File cache = new File(BaseApplication.getContext().getCacheDir(), "picasso-cache");
     if (cache.exists() && cache.isDirectory()) {
       return deleteDir(cache);
     }

@@ -8,12 +8,12 @@
         "source": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\IhaveuUtil\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
-        "source": "D:\\Android\\AndroidStudioProjects\\IhaveuUtil\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_menu_item_action_area.xml"
-    },
-    {
         "merged": "D:\\Android\\AndroidStudioProjects\\IhaveuUtil\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "D:\\Android\\AndroidStudioProjects\\IhaveuUtil\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\IhaveuUtil\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "D:\\Android\\AndroidStudioProjects\\IhaveuUtil\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\IhaveuUtil\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
@@ -96,32 +96,32 @@
         "source": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+        "merged": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\ihaveu_toast_layout.xml",
+        "source": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\src\\main\\res\\layout\\ihaveu_toast_layout.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\IhaveuUtil\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
         "source": "D:\\Android\\AndroidStudioProjects\\IhaveuUtil\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
-        "merged": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\ihaveu_toast_layout.xml",
-        "source": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\src\\main\\res\\layout\\ihaveu_toast_layout.xml"
+        "merged": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
         "source": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\IhaveuUtil\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "D:\\Android\\AndroidStudioProjects\\IhaveuUtil\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_simple.xml"
+        "merged": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
         "source": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "D:\\Android\\AndroidStudioProjects\\IhaveuUtil\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "D:\\Android\\AndroidStudioProjects\\IhaveuUtil\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_simple.xml"
     },
     {
         "merged": "D:\\Users\\bc\\Documents\\AndroidStudioProjects\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",

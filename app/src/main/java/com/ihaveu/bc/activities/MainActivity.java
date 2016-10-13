@@ -14,6 +14,7 @@ import com.ihaveu.bc.interfaces.IMain;
 import com.ihaveu.bc.okhttphelp.ImageLoader;
 import com.ihaveu.bc.presenter.MainPresenter;
 import com.ihaveu.bc.utils.MeasureToast;
+import com.ihaveu.bc.utils.SharedpreferenceUtil;
 import com.lzy.okhttputils.cookie.store.PersistentCookieStore;
 
 import butterknife.BindView;
@@ -41,6 +42,10 @@ public class MainActivity extends Activity implements IMain {
     Button registerButton;
     @BindView(R.id.get_goods_list_button)
     Button getGoodsListButton;
+    @BindView(R.id.show_data_button)
+    Button showDataButton;
+    @BindView(R.id.clear_data_button)
+    Button getDataButton;
 
     //  private Button getTextView,postTextView;
 //  private TextView textView;
@@ -65,7 +70,7 @@ public class MainActivity extends Activity implements IMain {
 
     @OnClick({R.id.get_request, R.id.login_button, R.id.get_image_request, R.id
             .clear_image_cache, R.id.getuer_button, R.id.logout_button, R.id.register_button,
-    R.id.get_goods_list_button})
+            R.id.get_goods_list_button,R.id.show_data_button,R.id.clear_data_button})
 
     public void onClick(View view) {
         Log.d("MainActivity", "onClick");
@@ -98,8 +103,16 @@ public class MainActivity extends Activity implements IMain {
                 startActivity(intent);
                 break;
             case R.id.get_goods_list_button:
-                intent = new Intent(this,GoodsListActivity.class);
+                intent = new Intent(this, GoodsListActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.show_data_button:
+                SharedpreferenceUtil.saveData("name","Hello World !");
+                MeasureToast.showToast((String)SharedpreferenceUtil.getData("name",""));
+                break;
+            case R.id.clear_data_button:
+                SharedpreferenceUtil.clearData("name");
+                MeasureToast.showToast((String) SharedpreferenceUtil.getData("name",""));
                 break;
         }
     }

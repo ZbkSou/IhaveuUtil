@@ -66,6 +66,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="获取商品列表"/>
+        <Button
+            android:id="@+id/show_data_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取本地数据"/>
+        <Button
+            android:id="@+id/clear_data_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="清除本地数据"/>
 
     </LinearLayout>
 

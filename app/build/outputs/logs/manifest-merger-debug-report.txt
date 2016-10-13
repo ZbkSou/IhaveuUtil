@@ -90,7 +90,7 @@ MERGED from [com.android.support:support-compat:24.2.1] D:\Android\AndroidStudio
 	android:theme
 		ADDED from D:\Android\AndroidStudioProjects\IhaveuUtil\app\src\main\AndroidManifest.xml:11:9-40
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\IhaveuUtil\app\src\main\AndroidManifest.xml:6:9-44
+		ADDED from D:\Android\AndroidStudioProjects\IhaveuUtil\app\src\main\AndroidManifest.xml:6:9-45
 activity#com.ihaveu.bc.activities.MainActivity
 ADDED from D:\Android\AndroidStudioProjects\IhaveuUtil\app\src\main\AndroidManifest.xml:12:9-18:20
 	android:name
