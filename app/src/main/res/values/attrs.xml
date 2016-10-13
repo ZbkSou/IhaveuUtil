@@ -13,7 +13,6 @@
             <enum name="visable" value="1"></enum>
             <enum name="gone" value="0"></enum>
         </attr>
-        <attr name="d_isBankCard" format="boolean"></attr>
     </declare-styleable>
     <!-- 自定义EditText newIhaveu -->
     <declare-styleable name="d_edittext">

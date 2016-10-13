@@ -1,16 +1,16 @@
 
-.gradle
+.gradle/
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
+#/.idea/workspace.xml
+#/.idea/libraries
 
-/.idea
+/.idea/
 .DS_Store
-/build
+/build/
 /captures
 
-IhaveuUtil.iml
-/app/build
+/IhaveuUtil.iml
+/app/build/
 /app/app.iml
 /app/newihaveu_keystore.jks
 /gradle.properties

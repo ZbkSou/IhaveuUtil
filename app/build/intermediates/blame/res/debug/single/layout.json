@@ -148,12 +148,24 @@
         "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_menu.xml"
     },
     {
+        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/d_edit_text.xml",
+        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/res/layout/d_edit_text.xml"
+    },
+    {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
         "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
         "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/login_auto_complete_text_item.xml",
+        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/res/layout/login_auto_complete_text_item.xml"
+    },
+    {
+        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/login_auto_complete_gridview.xml",
+        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/res/layout/login_auto_complete_gridview.xml"
     },
     {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
@@ -208,12 +220,12 @@
         "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/res/layout/list_page_footer.xml"
     },
     {
-        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_mode_close_item_material.xml"
-    },
-    {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
         "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
@@ -222,6 +234,14 @@
     {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
         "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/activity_goods_list.xml",
+        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_goods_list.xml"
+    },
+    {
+        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/itemgrid_goodslist.xml",
+        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/res/layout/itemgrid_goodslist.xml"
     },
     {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",

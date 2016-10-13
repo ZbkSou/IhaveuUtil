@@ -52,6 +52,10 @@
         "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_cab_background_top_material.xml"
     },
     {
+        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
         "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_spinner_textfield_background_material.xml"
     },
@@ -60,24 +64,24 @@
         "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_search_api_material.xml"
     },
     {
-        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
-        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_clear_material.xml"
+        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable/login_edittext_bg.xml",
+        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/login_edittext_bg.xml"
     },
     {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable/design_ic_visibility.xml",
         "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/drawable/design_ic_visibility.xml"
     },
     {
-        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
-        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_voice_search_api_material.xml"
+        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_clear_material.xml"
     },
     {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
         "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
         "merged": "/Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",

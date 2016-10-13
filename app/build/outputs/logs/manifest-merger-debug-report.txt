@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-26:12
+ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:3:11-34
 		INJECTED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/
 		INJECTED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:5:5-24:19
+ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:5:5-25:19
 MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.2.1] /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.1] /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:25:5-20
@@ -94,7 +94,7 @@ MERGED from [com.android.support:support-compat:24.2.1] /Users/bc/Documents/Andr
 activity#com.ihaveu.bc.activities.MainActivity
 ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:12:19-71
+		ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:12:19-58
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
@@ -106,13 +106,17 @@ ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/
 	android:name
 		ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:16:27-74
 activity#com.ihaveu.bc.activities.LoginActivity
-ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:19:9-21:20
+ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:19:9-20:20
 	android:name
-		ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:19:19-72
+		ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:19:19-59
 activity#com.ihaveu.bc.activities.RegisterActivity
-ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:22:9-23:20
+ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:21:9-22:20
 	android:name
-		ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:22:19-75
+		ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:21:19-62
+activity#com.ihaveu.bc.activities.GoodsListActivity
+ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:23:9-24:20
+	android:name
+		ADDED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:23:19-63
 uses-sdk
 INJECTED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:21:5-23:78
@@ -207,4 +211,4 @@ ADDED from [com.lzy.net:okhttputils:1.8.1] /Users/bc/Documents/AndroidStudioProj
 	android:name
 		ADDED from [com.lzy.net:okhttputils:1.8.1] /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/build/intermediates/exploded-aar/com.lzy.net/okhttputils/1.8.1/AndroidManifest.xml:14:22-81
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-26:12 reason: com.lzy.okhttputils requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/bc/Documents/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml:2:1-27:12 reason: com.lzy.okhttputils requested WRITE_EXTERNAL_STORAGE
