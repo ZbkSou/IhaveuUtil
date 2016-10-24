@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.ihaveu.bc.R;
+import com.lzy.okhttputils.OkHttpUtils;
+
+import butterknife.ButterKnife;
 
 /**
  * todo 添加初始化toolbar
@@ -15,7 +18,8 @@ public abstract class BaseActivity extends AppCompatActivity{
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-
+//    添加ButterKinife 不需要再子类绑定
+    ButterKnife.bind(this);
   }
   protected void onResume() {
     super.onResume();
@@ -26,6 +30,14 @@ public abstract class BaseActivity extends AppCompatActivity{
     super.onPause();
 
 //        MobclickAgent.onPause(this);
+  }
+
+  /**
+   * 获取子类名
+   * @return
+   */
+  protected String getName(){
+    return getClass().getSimpleName();
   }
 
 

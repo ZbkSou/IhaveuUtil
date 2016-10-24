@@ -13,7 +13,7 @@ import com.ihaveu.bc.model.SessionModel;
 import com.ihaveu.bc.network.IModelResponse;
 import com.ihaveu.bc.okhttphelp.ImageLoader;
 import com.ihaveu.bc.utils.TextUtil;
-import com.ihaveu.bc.utils.Toast;
+import com.ihaveu.bc.utils.ToastUtil;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -97,7 +97,7 @@ public class RegisterActivity extends Activity {
 
                                   else {
                                         if (isHasShowCaptcha && !TextUtil.isValidText(captchaEdit.getText().toString())) {
-                                          Toast.showToast( "请输入验证码");
+                                          ToastUtil.showToast( "请输入验证码");
                                         } else if (TextUtil.isValidText(captchaEdit.getText().toString())) {
                                           Map<String, String> map = new HashMap<String, String>();
                                           map.put("captcha", captchaEdit.getText().toString());
@@ -109,7 +109,7 @@ public class RegisterActivity extends Activity {
                                                 if (new JSONObject(model).getString("is_valid").equals("true")) {
                                                   register(params);
                                                 } else {
-                                                  Toast.showToast( "请重新输入验证码（验证码输入错误）");
+                                                  ToastUtil.showToast( "请重新输入验证码（验证码输入错误）");
                                                 }
                                               } catch (JSONException e) {
                                                 e.printStackTrace();
@@ -148,7 +148,7 @@ public class RegisterActivity extends Activity {
       @Override
       public void onSuccess(String model, ArrayList<String> list) {
         try {
-          Toast.showToast(new JSONObject(model).getJSONObject("account").getInt("id")+"");
+          ToastUtil.showToast(new JSONObject(model).getJSONObject("account").getInt("id")+"");
         } catch (JSONException e) {
           e.printStackTrace();
         }
@@ -156,7 +156,7 @@ public class RegisterActivity extends Activity {
 
       @Override
       public void onError(String msg) {
-        Toast.showToast(msg);
+        ToastUtil.showToast(msg);
       }
     });
   }

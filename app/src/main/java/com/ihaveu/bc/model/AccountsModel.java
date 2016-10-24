@@ -4,7 +4,7 @@ import android.content.Context;
 
 import com.ihaveu.bc.callback.JsonCallBack;
 import com.ihaveu.bc.network.IModelResponse;
-import com.ihaveu.bc.utils.Toast;
+import com.ihaveu.bc.utils.ToastUtil;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -39,7 +39,7 @@ public class AccountsModel extends Model{
       public void onSuccess(Object o, Call call, Response response) {
         try {
           if (new JSONObject((String)o).has("error")) {
-            Toast.showToast("信息提交失败,请稍后重试。");
+            ToastUtil.showToast("信息提交失败,请稍后重试。");
             try {
               modelResponse.onError((new JSONObject((String)o).getString("error")));
             } catch (JSONException e) {

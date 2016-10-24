@@ -26,7 +26,7 @@ public class GoodsListActivity extends Activity implements SwipeRefreshLayout
     private GoodsListPresenter goodsListPresenter;
     private ProductSummaryAdapter adapter;
     private int currentPage = 1;
-    private int per_page = 2 ;
+    private int per_page = 20 ;
 
     @BindView(R.id.load_more_recycler_view)
     LoadMoreRecyclerView mLoadMoreRecyclerView;

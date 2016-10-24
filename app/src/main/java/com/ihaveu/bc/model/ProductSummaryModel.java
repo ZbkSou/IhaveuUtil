@@ -6,7 +6,7 @@ import com.google.gson.reflect.TypeToken;
 import com.ihaveu.bc.callback.JsonCallBack;
 import com.ihaveu.bc.data.ProductSummary;
 import com.ihaveu.bc.network.IModelResponse;
-import com.ihaveu.bc.utils.MeasureTextUtil;
+
 import com.lzy.okhttputils.callback.AbsCallback;
 
 import org.json.JSONArray;
@@ -59,10 +59,7 @@ public class ProductSummaryModel extends Model {
 
     public void loadIds(int page, int per_page, final IModelResponse<String> modelResponse) {
         Map<String, String> params = new HashMap<>();
-        params.put("filter", "true");
-        params.put("keyword", "秋冬外套场");
-        params.put("where[unsold_count][gt]", "0");
-        params.put("order[published_at]", "desc");
+
         params.put("page", page + "");
         params.put("per_page", per_page + "");
         get(Url_id, mContext, params, new JsonCallBack(String.class) {

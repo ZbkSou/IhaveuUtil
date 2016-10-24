@@ -6,9 +6,11 @@ import android.util.Log;
 import com.lzy.okhttputils.OkHttpUtils;
 import com.lzy.okhttputils.cache.CacheMode;
 import com.lzy.okhttputils.callback.AbsCallback;
+import com.lzy.okhttputils.callback.FileCallback;
 
 import org.json.JSONObject;
 
+import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.Map;
@@ -142,6 +144,22 @@ public class Model {
          .tag(mContext)//
         .params(params)//
         .execute(absCallback);
+  }
+
+  /**
+   * 普通的下载文件，不支持多线，断点
+   * @param url
+   * @param mContext
+   * @param fileName
+   * @param fileCallback
+   */
+  public void fileDowload(String url,Context mContext,String fileName, FileCallback fileCallback){
+    OkHttpUtils.get(url)
+        .tag(mContext)
+        .execute(fileCallback);
+  }
+  public void upFile(){
+
   }
 
 }

@@ -9,7 +9,7 @@ import com.ihaveu.bc.R;
 import com.ihaveu.bc.model.SessionModel;
 import com.ihaveu.bc.network.IModelResponse;
 import com.ihaveu.bc.utils.LogUtil;
-import com.ihaveu.bc.utils.Toast;
+import com.ihaveu.bc.utils.ToastUtil;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -59,7 +59,7 @@ public class LoginActivity extends Activity {
       @Override
       public void onSuccess(String model, ArrayList<String> list) {
         LogUtil.d(model);
-        Toast.showToast("登录成功"+model);
+        ToastUtil.showToast("登录成功"+model);
       }
 
       @Override

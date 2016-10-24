@@ -5,7 +5,8 @@ import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.WindowManager;
 
-import com.ihaveu.bc.base.BaseAplication;
+import com.ihaveu.bc.base.BaseApplication;
+
 
 /**
  * Created by bc on 16/10/11.
@@ -17,7 +18,7 @@ public class MeasureUtil {
    * @return
    */
   private static Context getContext(){
-    return BaseAplication.getContext();
+    return BaseApplication.getContext();
   }
   /**
    * @param context

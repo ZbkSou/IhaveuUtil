@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="@dimen/screen_5_percent"
-    android:paddingRight="@dimen/screen_5_percent">
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp">
     <GridView 
         android:id="@+id/d_grid_email"
         android:layout_width="match_parent"

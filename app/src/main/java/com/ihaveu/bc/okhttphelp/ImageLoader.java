@@ -1,11 +1,10 @@
 package com.ihaveu.bc.okhttphelp;
 
-import android.content.Context;
 import android.graphics.Bitmap;
-import android.net.Uri;
 import android.widget.ImageView;
 
-import com.ihaveu.bc.base.BaseAplication;
+import com.ihaveu.bc.base.BaseApplication;
+import com.ihaveu.bc.utils.FileUtil;
 import com.lzy.okhttputils.OkHttpUtils;
 import com.lzy.okhttputils.callback.BitmapCallback;
 import com.squareup.picasso.MemoryPolicy;
@@ -30,8 +29,8 @@ public class ImageLoader {
 
   private static Picasso getInstance() {
     if (picasso == null) {
-      picasso = new Picasso.Builder(BaseAplication.getContext())
-          .downloader(new OkHttp3Downloader(BaseAplication.getContext()))
+      picasso = new Picasso.Builder(BaseApplication.getContext())
+          .downloader(new OkHttp3Downloader(BaseApplication.getContext()))
           .build();
     }
     return picasso;
@@ -52,6 +51,20 @@ public class ImageLoader {
     return picasso;
   }
 
+  /**
+   * 本地图片加载
+   *
+   * @param file
+   * @param imageView
+   * @return
+   */
+  public static Picasso display(File file, ImageView imageView) {
+    picasso.load(file)
+        .memoryPolicy(MemoryPolicy.NO_STORE, MemoryPolicy.NO_CACHE)
+        .networkPolicy(NetworkPolicy.NO_CACHE, NetworkPolicy.NO_STORE)
+        .into(imageView);
+    return picasso;
+  }
 
   /**
    * 清楚图片缓存
@@ -59,26 +72,13 @@ public class ImageLoader {
    * @return
    */
   public static boolean clearImageDiskCache() {
-    File cache = new File(BaseAplication.getContext().getCacheDir(), "picasso-cache");
+    File cache = new File(BaseApplication.getContext().getCacheDir(), "picasso-cache");
     if (cache.exists() && cache.isDirectory()) {
-      return deleteDir(cache);
+      return FileUtil.deleteDir(cache);
     }
     return false;
   }
 
-  private static boolean deleteDir(File dir) {
-    if (dir.isDirectory()) {
-      String[] children = dir.list();
-      for (int i = 0; i < children.length; i++) {
-        boolean success = deleteDir(new File(dir, children[i]));
-        if (!success) {
-          return false;
-        }
-      }
-    }
-    // The directory is now empty so delete it
-    return dir.delete();
-  }
 
   /**
    * 用于验证码图片的请求可以携带cookies
@@ -93,6 +93,15 @@ public class ImageLoader {
             imageView.setImageBitmap(bitmap);
           }
         });
+  }
+  /**
+   * 用于获取图片具体操作在回调接口中定义
+   * @param url
+   * @param bitmapCallback
+   */
+  public static void getImage(String url,BitmapCallback bitmapCallback) {
+    OkHttpUtils.get(url)//
+        .execute(bitmapCallback);
   }
 
 }
