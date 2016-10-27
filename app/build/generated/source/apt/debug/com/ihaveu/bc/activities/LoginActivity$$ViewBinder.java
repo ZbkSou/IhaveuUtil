@@ -15,13 +15,13 @@ public class LoginActivity$$ViewBinder<T extends LoginActivity> implements ViewB
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131492976, "field 'username'");
-    target.username = finder.castView(view, 2131492976, "field 'username'");
-    view = finder.findRequiredView(source, 2131492977, "field 'password'");
-    target.password = finder.castView(view, 2131492977, "field 'password'");
-    view = finder.findRequiredView(source, 2131492978, "field 'login' and method 'onClick'");
-    target.login = finder.castView(view, 2131492978, "field 'login'");
-    unbinder.view2131492978 = view;
+    view = finder.findRequiredView(source, 2131492988, "field 'username'");
+    target.username = finder.castView(view, 2131492988, "field 'username'");
+    view = finder.findRequiredView(source, 2131492989, "field 'password'");
+    target.password = finder.castView(view, 2131492989, "field 'password'");
+    view = finder.findRequiredView(source, 2131492990, "field 'login' and method 'onClick'");
+    target.login = finder.castView(view, 2131492990, "field 'login'");
+    unbinder.view2131492990 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -38,7 +38,7 @@ public class LoginActivity$$ViewBinder<T extends LoginActivity> implements ViewB
   protected static class InnerUnbinder<T extends LoginActivity> implements Unbinder {
     private T target;
 
-    View view2131492978;
+    View view2131492990;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -54,7 +54,7 @@ public class LoginActivity$$ViewBinder<T extends LoginActivity> implements ViewB
     protected void unbind(T target) {
       target.username = null;
       target.password = null;
-      view2131492978.setOnClickListener(null);
+      view2131492990.setOnClickListener(null);
       target.login = null;
     }
   }

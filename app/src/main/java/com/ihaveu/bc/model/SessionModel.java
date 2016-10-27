@@ -6,10 +6,6 @@ import android.util.Log;
 import com.ihaveu.bc.callback.JsonCallBack;
 import com.ihaveu.bc.data.Session;
 import com.ihaveu.bc.network.IModelResponse;
-import com.ihaveu.bc.utils.MeasureToast;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.Map;
 

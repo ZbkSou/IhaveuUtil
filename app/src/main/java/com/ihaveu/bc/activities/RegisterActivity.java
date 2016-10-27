@@ -12,8 +12,8 @@ import com.ihaveu.bc.model.AccountsModel;
 import com.ihaveu.bc.model.SessionModel;
 import com.ihaveu.bc.network.IModelResponse;
 import com.ihaveu.bc.okhttphelp.ImageLoader;
-import com.ihaveu.bc.utils.MeasureTextUtil;
-import com.ihaveu.bc.utils.MeasureToast;
+import com.ihaveu.bc.utils.TextUtil;
+import com.ihaveu.bc.utils.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -65,7 +65,7 @@ public class RegisterActivity extends Activity {
     params.put("account[phone]", username.getText().toString());
     params.put("account[password]", password.getText().toString());
     params.put("account[password_confirmation]", password.getText().toString());
-    if (MeasureTextUtil.isValidText(captchaEdit.getText().toString())) {
+    if (TextUtil.isValidText(captchaEdit.getText().toString())) {
       params.put("captcha", captchaEdit.getText().toString());
     }
     params.put("account[client]", "android");
@@ -96,9 +96,9 @@ public class RegisterActivity extends Activity {
                                         }
 
                                   else {
-                                        if (isHasShowCaptcha && !MeasureTextUtil.isValidText(captchaEdit.getText().toString())) {
-                                          MeasureToast.showToast( "请输入验证码");
-                                        } else if (MeasureTextUtil.isValidText(captchaEdit.getText().toString())) {
+                                        if (isHasShowCaptcha && !TextUtil.isValidText(captchaEdit.getText().toString())) {
+                                          Toast.showToast( "请输入验证码");
+                                        } else if (TextUtil.isValidText(captchaEdit.getText().toString())) {
                                           Map<String, String> map = new HashMap<String, String>();
                                           map.put("captcha", captchaEdit.getText().toString());
                                           accountsModel.validateCaptcha(map, new IModelResponse<String>() {
@@ -109,7 +109,7 @@ public class RegisterActivity extends Activity {
                                                 if (new JSONObject(model).getString("is_valid").equals("true")) {
                                                   register(params);
                                                 } else {
-                                                  MeasureToast.showToast( "请重新输入验证码（验证码输入错误）");
+                                                  Toast.showToast( "请重新输入验证码（验证码输入错误）");
                                                 }
                                               } catch (JSONException e) {
                                                 e.printStackTrace();
@@ -148,7 +148,7 @@ public class RegisterActivity extends Activity {
       @Override
       public void onSuccess(String model, ArrayList<String> list) {
         try {
-          MeasureToast.showToast(new JSONObject(model).getJSONObject("account").getInt("id")+"");
+          Toast.showToast(new JSONObject(model).getJSONObject("account").getInt("id")+"");
         } catch (JSONException e) {
           e.printStackTrace();
         }
@@ -156,7 +156,7 @@ public class RegisterActivity extends Activity {
 
       @Override
       public void onError(String msg) {
-        MeasureToast.showToast(msg);
+        Toast.showToast(msg);
       }
     });
   }

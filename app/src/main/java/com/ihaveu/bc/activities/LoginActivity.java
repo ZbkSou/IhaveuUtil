@@ -2,29 +2,21 @@ package com.ihaveu.bc.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 
 import com.ihaveu.bc.R;
-import com.ihaveu.bc.model.Model;
 import com.ihaveu.bc.model.SessionModel;
 import com.ihaveu.bc.network.IModelResponse;
 import com.ihaveu.bc.utils.LogUtil;
-import com.ihaveu.bc.utils.MeasureToast;
-import com.lzy.okhttputils.callback.StringCallback;
+import com.ihaveu.bc.utils.Toast;
 
-import org.json.JSONObject;
-
-import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import okhttp3.Call;
-import okhttp3.Response;
 
 /**
  * Created by bc on 16/10/8.
@@ -67,7 +59,7 @@ public class LoginActivity extends Activity {
       @Override
       public void onSuccess(String model, ArrayList<String> list) {
         LogUtil.d(model);
-        MeasureToast.showToast("登录成功"+model);
+        Toast.showToast("登录成功"+model);
       }
 
       @Override
