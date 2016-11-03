@@ -1,5 +1,4 @@
 package com.ihaveu.bc.widget;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
@@ -21,9 +20,11 @@ public class DTextView extends TextView{
   }
   public DTextView(Context context, AttributeSet attrs){
     super(context,attrs);
+
     TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.DTextView);
     int type = typedArray.getInt(R.styleable.DTextView_DTextView_font,0);
     setTypeface(type);
+    typedArray.recycle();
   }
   public DTextView(Context context, AttributeSet attrs, int defStyle) {
     super(context, attrs, 0);

@@ -3,6 +3,7 @@ package com.ihaveu.bc.base;
 import android.app.Application;
 import android.content.Context;
 
+import com.ihaveu.bc.utils.TextUtil;
 import com.lzy.okhttputils.OkHttpUtils;
 import com.lzy.okhttputils.cache.CacheEntity;
 import com.lzy.okhttputils.cache.CacheMode;
@@ -74,7 +75,8 @@ public class BaseApplication extends Application {
           //这两行同上,不需要就不要传
           .addCommonHeaders(headers)                                         //设置全局公共头
           .addCommonParams(params);                                          //设置全局公共参数
-
+//     初始化字体工具
+      TextUtil.initTypeface(mContext);
 
     } catch (Exception e) {
       e.printStackTrace();

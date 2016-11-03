@@ -1,7 +1,6 @@
 package com.ihaveu.bc.activities;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,13 +14,9 @@ import com.ihaveu.bc.interfaces.IMain;
 import com.ihaveu.bc.okhttphelp.ImageLoader;
 import com.ihaveu.bc.presenter.MainPresenter;
 import com.ihaveu.bc.utils.InitImageUtil;
-import com.ihaveu.bc.utils.LogUtil;
 import com.ihaveu.bc.utils.SharedpreferenceUtil;
 import com.ihaveu.bc.utils.ToastUtil;
-
 import com.lzy.okhttputils.cookie.store.PersistentCookieStore;
-
-import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -56,12 +51,13 @@ public class MainActivity extends Activity implements IMain {
   Button imagePick;
   @BindView(R.id.image_download)
   Button imageDownload;
+  @BindView(R.id.new_widget_button)
+  Button newWidgetButton;
 
   //  private Button getTextView,postTextView;
 //  private TextView textView;
 
   private MainPresenter mainPresenter;
-  public static int IMAGE_PICKER = 100;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +77,8 @@ public class MainActivity extends Activity implements IMain {
 
   @OnClick({R.id.get_request, R.id.login_button, R.id.get_image_request, R.id
       .clear_image_cache, R.id.getuer_button, R.id.logout_button, R.id.register_button,
-      R.id.get_goods_list_button, R.id.show_data_button, R.id.clear_data_button, R.id.image_pick,R.id.image_download})
+      R.id.get_goods_list_button, R.id.show_data_button, R.id.clear_data_button, R.id.image_pick,
+      R.id.image_download,R.id.new_widget_button})
 
   public void onClick(View view) {
     Log.d("MainActivity", "onClick");
@@ -127,12 +124,15 @@ public class MainActivity extends Activity implements IMain {
         ToastUtil.showToast((String) SharedpreferenceUtil.getData("name", ""));
         break;
       case R.id.image_download:
-        InitImageUtil.saveInitImage("http://i2.hdslb.com/video/b5/b572efb22f9e78d7db769e522ddb2c81.jpg",this);
+        InitImageUtil.saveInitImage("http://i2.hdslb.com/video/b5/b572efb22f9e78d7db769e522ddb2c81.jpg", this);
         requestImage.setImageBitmap(InitImageUtil.getInitImage(this));
+        break;
+      case R.id.new_widget_button:
+        intent = new Intent(this, NewWidgetActivity.class);
+        startActivity(intent);
         break;
     }
   }
-
 
 
 }

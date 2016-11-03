@@ -22,6 +22,9 @@
         </activity>
         <activity android:name=".activities.GoodsListActivity">
         </activity>
+        <activity android:name=".activities.NewWidgetActivity">
+        </activity>
+
     </application>
 
 </manifest>

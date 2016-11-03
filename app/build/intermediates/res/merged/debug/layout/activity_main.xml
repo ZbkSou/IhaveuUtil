@@ -86,6 +86,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="清除本地数据"/>
+        <Button
+            android:id="@+id/new_widget_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="模仿优众分类页"/>
 
     </LinearLayout>
 

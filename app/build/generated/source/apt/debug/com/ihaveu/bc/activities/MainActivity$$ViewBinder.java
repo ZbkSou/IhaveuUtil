@@ -127,6 +127,15 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
         target.onClick(p0);
       }
     });
+    view = finder.findRequiredView(source, 2131493005, "field 'newWidgetButton' and method 'onClick'");
+    target.newWidgetButton = finder.castView(view, 2131493005, "field 'newWidgetButton'");
+    unbinder.view2131493005 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
     return unbinder;
   }
 
@@ -160,6 +169,8 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
     View view2131492993;
 
     View view2131492994;
+
+    View view2131493005;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -199,6 +210,8 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
       target.imagePick = null;
       view2131492994.setOnClickListener(null);
       target.imageDownload = null;
+      view2131493005.setOnClickListener(null);
+      target.newWidgetButton = null;
     }
   }
 }

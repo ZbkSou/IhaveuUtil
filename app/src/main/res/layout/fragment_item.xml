@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ihaveu.bc.widget.DTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/initialText"
+    android:layout_width="match_parent"
+    android:layout_height="27dp"
+    android:background="#f5f5f7"
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    android:text="热门"
+    android:textSize="14dp"/>

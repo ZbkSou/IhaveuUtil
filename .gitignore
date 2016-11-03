@@ -9,7 +9,7 @@
 .DS_Store
 /build/
 /captures
-
+app/build/
 /IhaveuUtil.iml
 /app/build/
 /app/app.iml

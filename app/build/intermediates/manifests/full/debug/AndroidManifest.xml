@@ -35,6 +35,8 @@
         </activity>
         <activity android:name="com.ihaveu.bc.activities.GoodsListActivity" >
         </activity>
+        <activity android:name="com.ihaveu.bc.activities.NewWidgetActivity" >
+        </activity>
     </application>
 
 </manifest>
